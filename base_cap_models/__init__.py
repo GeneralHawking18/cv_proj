@@ -1,7 +1,7 @@
 from base_cap_models import blip
 
-def create(args):
-    if args.base_model == "blip1":
+def create(model_name):
+    if model_name == "blip1":
         return blip.BLIP_1()
 
 def gen_init_cap(model, image):

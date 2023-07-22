@@ -33,11 +33,12 @@ def process_masks(masks):
     sigmoid_array = expit(np.array(blended_image)/255*10 - 1)
     sigmoid_image = Image.fromarray(sigmoid_array * 255).convert("L")
 
-    # sigmoid_image = blended_image
+    sigmoid_image = blended_image
     blurred_mask_image = sigmoid_image.filter(ImageFilter.GaussianBlur(radius=60))
 
     # Chuyển đổi lại hình ảnh PIL thành mảng np
     blurred_mask = np.array(blurred_mask_image) /255
    
     return blurred_mask
+
 

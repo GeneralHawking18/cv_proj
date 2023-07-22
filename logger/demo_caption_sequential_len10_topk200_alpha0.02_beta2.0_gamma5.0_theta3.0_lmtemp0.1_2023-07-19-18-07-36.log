@@ -1,0 +1,233 @@
+Generating order:sequential
+Run type:caption
+Namespace(seed=42, batch_size=1, device='cuda', run_type='caption', prompt='Image of', order='sequential', control_type='sentiment', pos_type=[['DET'], ['ADJ', 'NOUN'], ['NOUN'], ['VERB'], ['VERB'], ['ADV'], ['ADP'], ['DET', 'NOUN'], ['NOUN'], ['NOUN', '.'], ['.', 'NOUN'], ['.', 'NOUN']], sentiment_type='positive', samples_num=2, sentence_len=10, candidate_k=200, alpha=0.02, beta=2.0, gamma=5.0, theta=3.0, lm_temperature=0.1, num_iterations=10, lm_model='bert-base-uncased', match_model='openai/clip-vit-base-patch32', caption_img_path='./examples/girl.jpg', stop_words_path='./text_control/gibbs_polish/stop_words.txt', add_extra_stopwords=[], seed_len=3)
+iter 1, The 1-th image: h,clip score 0.325: [CLS] a photo of the horse running herd background and a map background. [SEP]
+iter 2, The 1-th image: h,clip score 0.337: [CLS] a photo of the horse and rider herd on the transparent background. [SEP]
+iter 3, The 1-th image: h,clip score 0.296: [CLS] a photo of the horse and running appeared in the transparent window. [SEP]
+iter 4, The 1-th image: h,clip score 0.339: [CLS] a photo of the horse gang had appeared in the browser ad. [SEP]
+Finished in 8.649s
+The 1-th image: h
+final caption: a photo of the horse gang had appeared in the browser ad.
+best caption: a photo of the horse gang had appeared in the browser ad.
+iter 1, The 1-th image: h,clip score 0.353: [CLS] a photo of the horse chase feature shown on the website release. [SEP]
+iter 2, The 1-th image: h,clip score 0.314: [CLS] a photo of the horse game is available on the dvd release. [SEP]
+iter 3, The 1-th image: h,clip score 0.320: [CLS] a photo of the horse running is included on the dvd release. [SEP]
+iter 4, The 1-th image: h,clip score 0.314: [CLS] a photo of the horse running was included on the dvd release. [SEP]
+Finished in 5.472s
+The 1-th image: h
+final caption: a photo of the horse running was included on the dvd release.
+best caption: a photo of the horse chase feature shown on the website release.
+Order_list:[3, 4, 6, 7, 2, 5, 0, 1]
+iter 1, The 1-th image: h,clip score 0.321: [CLS] a photo of the horse and its jockeys playing white cowboys. [SEP]
+iter 2, The 1-th image: h,clip score 0.318: [CLS] a photo of the horse and its handlers running their horses. [SEP]
+iter 3, The 1-th image: h,clip score 0.307: [CLS] a photo of the horse and the grooms running the horses. [SEP]
+iter 4, The 1-th image: h,clip score 0.329: [CLS] a photo of the horse and the dakotas chasing the horse. [SEP]
+Finished in 6.546s
+The 1-th image: h
+final caption: a photo of the horse and the dakotas chasing the horse.
+best caption: a photo of the horse and the dakotas chasing the horse.
+Order_list:[3, 4, 6, 7, 2, 5, 0, 1]
+iter 1, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 2, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 3, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 4, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+Finished in 5.098s
+The 1-th image: h
+final caption: a photo of the horse and two mares playing white cowboys.
+best caption: a photo of the horse and two mares playing white cowboys.
+Order_list:[3, 4, 6, 7, 2, 5, 0, 1]
+iter 1, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 2, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 3, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+iter 4, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse and two mares playing white cowboys. [SEP]
+Finished in 5.821s
+The 1-th image: h
+final caption: a photo of the horse and two mares playing white cowboys.
+best caption: a photo of the horse and two mares playing white cowboys.
+iter 1, The 1-th image: h,clip score 0.315: [CLS] a photo of the horse chase feature includes a large red racing flag display. [SEP]
+iter 2, The 1-th image: h,clip score 0.334: [CLS] a photo of the horse breed feature reveals a large horse breed on display. [SEP]
+iter 3, The 1-th image: h,clip score 0.335: [CLS] a photo of the horse game website shows a different horse game on display. [SEP]
+iter 4, The 1-th image: h,clip score 0.341: [CLS] a photo of the horse game feature has a different horse variation on it. [SEP]
+Finished in 8.328s
+The 1-th image: h
+final caption: a photo of the horse game feature has a different horse variation on it.
+best caption: a photo of the horse game feature has a different horse variation on it.
+iter 1, The 1-th image: h,clip score 0.367: [CLS] a photo of the horse chase feature shown on the official series website shown. [SEP]
+iter 2, The 1-th image: h,clip score 0.365: [CLS] a photo of the horse runs together appears on the western reserve website below. [SEP]
+iter 3, The 1-th image: h,clip score 0.381: [CLS] a photo of the horse rolling game image on the western reserve website exists. [SEP]
+iter 4, The 1-th image: h,clip score 0.382: [CLS] a photo of the horse chase game shown on the western stars website exists. [SEP]
+Finished in 7.116s
+The 1-th image: h
+final caption: a photo of the horse chase game shown on the western stars website exists.
+best caption: a photo of the horse chase game shown on the western stars website exists.
+iter 1, The 1-th image: h,clip score 0.367: [CLS] a photo of the horse chase feature shown on the official series website shown. [SEP]
+iter 2, The 1-th image: h,clip score 0.365: [CLS] a photo of the horse runs together appears on the western reserve website below. [SEP]
+iter 3, The 1-th image: h,clip score 0.347: [CLS] a photo of the horse rolling game is [unused0] at western australia game website. [SEP]
+iter 4, The 1-th image: h,clip score 0.352: [CLS] a photo of the horse chase sequence is playable on the video game battlefield. [SEP]
+Finished in 8.527s
+The 1-th image: h
+final caption: a photo of the horse chase sequence is playable on the video game battlefield.
+best caption: a photo of the horse chase feature shown on the official series website shown.
+iter 1, The 1-th image: h,clip score 0.360: [CLS] a photo of the horse surrounded by light horses highlighted the two horses together. [SEP]
+iter 2, The 1-th image: h,clip score 0.384: [CLS] a photo of the horse surrounded by light mist highlighted the two groups together. [SEP]
+iter 3, The 1-th image: h,clip score 0.399: [CLS] a photo of the horse surrounded by translucent fog highlighted the two groups together. [SEP]
+iter 4, The 1-th image: h,clip score 0.391: [CLS] a photo of the horse surrounded by moving fog highlighted the two groups together. [SEP]
+Finished in 8.333s
+The 1-th image: h
+final caption: a photo of the horse surrounded by moving fog highlighted the two groups together.
+best caption: a photo of the horse surrounded by translucent fog highlighted the two groups together.
+iter 1, The 1-th image: h,clip score 0.360: [CLS] a photo of the horse surrounded by light horses highlighted the two horses together. [SEP]
+iter 2, The 1-th image: h,clip score 0.384: [CLS] a photo of the horse surrounded by light mist highlighted the two groups together. [SEP]
+iter 3, The 1-th image: h,clip score 0.392: [CLS] a photo of the horse surrounded by translucent mist highlighted the two races together. [SEP]
+iter 4, The 1-th image: h,clip score 0.392: [CLS] a photo of the horse surrounded by translucent mist highlighted the two races together. [SEP]
+Finished in 7.493s
+The 1-th image: h
+final caption: a photo of the horse surrounded by translucent mist highlighted the two races together.
+best caption: a photo of the horse surrounded by translucent mist highlighted the two races together.
+iter 1, The 1-th image: h,clip score 0.374: [CLS] a photo of the horses background at at virtual model of light source. [SEP]
+iter 2, The 1-th image: h,clip score 0.337: [CLS] a photo of the horse featured online video and virtual images from the artwork. [SEP]
+iter 3, The 1-th image: h,clip score 0.305: [CLS] a photo of the horse combined with video and other clips accompanied the video. [SEP]
+iter 4, The 1-th image: h,clip score 0.371: [CLS] a photo of the horse merged with models featuring in white in the footage. [SEP]
+Finished in 8.982s
+The 1-th image: h
+final caption: a photo of the horse merged with models featuring in white in the footage.
+best caption: a photo of the horses background at at virtual model of light source.
+iter 1, The 1-th image: h,clip score 0.372: [CLS] a photo of the horses background at at virtual model of the horse. [SEP]
+iter 2, The 1-th image: h,clip score 0.326: [CLS] a photo of the horse featured exposures and each side of the song. [SEP]
+iter 3, The 1-th image: h,clip score 0.330: [CLS] a photo of the horse repeated hue each on either side of the screen. [SEP]
+iter 4, The 1-th image: h,clip score 0.333: [CLS] a photo of the horse altered toward movement on the bottom of the screen. [SEP]
+Finished in 8.861s
+The 1-th image: h
+final caption: a photo of the horse altered toward movement on the bottom of the screen.
+best caption: a photo of the horses background at at virtual model of the horse.
+iter 1, The 1-th image: h,clip score 0.342: [CLS] a photo of the horses background at the national park service website exists. [SEP]
+iter 2, The 1-th image: h,clip score 0.288: [CLS] a photo of the horse in public on the national park service website exists. [SEP]
+iter 3, The 1-th image: h,clip score 0.288: [CLS] a photo of the horse in public on the national park service website exists. [SEP]
+iter 4, The 1-th image: h,clip score 0.288: [CLS] a photo of the horse in public on the national park service website exists. [SEP]
+Finished in 6.897s
+The 1-th image: h
+final caption: a photo of the horse in public on the national park service website exists.
+best caption: a photo of the horses background at the national park service website exists.
+iter 1, The 1-th image: h,clip score 0.314: [CLS] a photo of the horses background at at the national racing museum exists. [SEP]
+iter 2, The 1-th image: h,clip score 0.308: [CLS] a photo of the horse in formation displayed at the kentucky horse museum exists. [SEP]
+iter 3, The 1-th image: h,clip score 0.320: [CLS] a photo of the horse rock herd preserved at the national hunt museum exists. [SEP]
+iter 4, The 1-th image: h,clip score 0.301: [CLS] a photo of the horse and rider herd in the national riding museum exists. [SEP]
+Finished in 9.026s
+The 1-th image: h
+final caption: a photo of the horse and rider herd in the national riding museum exists.
+best caption: a photo of the horse rock herd preserved at the national hunt museum exists.
+iter 1, The 1-th image: h,clip score 0.372: [CLS] a photo of the horses background at at virtual model of the horse. [SEP]
+iter 2, The 1-th image: h,clip score 0.347: [CLS] a photo of the horse featured online narration and virtual footage of each horse. [SEP]
+iter 3, The 1-th image: h,clip score 0.317: [CLS] a photo of the horse inspired the video and features images of the game. [SEP]
+iter 4, The 1-th image: h,clip score 0.308: [CLS] a photo of the horse opens the game and shows details of the game. [SEP]
+Finished in 7.551s
+The 1-th image: h
+final caption: a photo of the horse opens the game and shows details of the game.
+best caption: a photo of the horses background at at virtual model of the horse.
+iter 1, The 1-th image: h,clip score 0.372: [CLS] a photo of the horses background at at virtual model of the horse. [SEP]
+iter 2, The 1-th image: h,clip score 0.326: [CLS] a photo of the horse featured exposures and each side of the song. [SEP]
+iter 3, The 1-th image: h,clip score 0.336: [CLS] a photo of the horse repeated hue each on either side of the image. [SEP]
+iter 4, The 1-th image: h,clip score 0.330: [CLS] a photo of the horse andriders blurred to the back of the screen. [SEP]
+Finished in 9.117s
+The 1-th image: h
+final caption: a photo of the horse andriders blurred to the back of the screen.
+best caption: a photo of the horses background at at virtual model of the horse.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1]
+iter 1, The 1-th image: h,clip score 0.361: [CLS] a photo of the horse effects background animated videos and accompanying virtual models appear. [SEP]
+iter 2, The 1-th image: h,clip score 0.324: [CLS] a photo of the horse breed being used for animation for the characters appears. [SEP]
+iter 3, The 1-th image: h,clip score 0.312: [CLS] a photo of the horse species was used in 3d for the film adaptation. [SEP]
+iter 4, The 1-th image: h,clip score 0.369: [CLS] a photo of the horse herd was created in 3d for the website evolution. [SEP]
+Finished in 11.521s
+The 1-th image: h
+final caption: a photo of the horse herd was created in 3d for the website evolution.
+best caption: a photo of the horse herd was created in 3d for the website evolution.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1]
+iter 1, The 1-th image: h,clip score 0.318: [CLS] a photo of the horse on the road scene is a video game feature. [SEP]
+iter 2, The 1-th image: h,clip score 0.345: [CLS] a photo of the horse crossing the prairie afterward became a popular gameplay video. [SEP]
+iter 3, The 1-th image: h,clip score 0.351: [CLS] a photo of the horse in the dakotas became a popular game feature. [SEP]
+iter 4, The 1-th image: h,clip score 0.356: [CLS] a photo of the horse in the dakotas in a computer animation game. [SEP]
+Finished in 8.999s
+The 1-th image: h
+final caption: a photo of the horse in the dakotas in a computer animation game.
+best caption: a photo of the horse in the dakotas in a computer animation game.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.327: [CLS] image of the horse with the buffs returning and cowboys moving around it. [SEP]
+iter 2, The 1-th image: h,clip score 0.330: [CLS] image of the horse in a realistic background that featured cowboys dancing around it. [SEP]
+iter 3, The 1-th image: h,clip score 0.353: [CLS] image of the horse on a moving game site had cowboys dancing around it. [SEP]
+iter 4, The 1-th image: h,clip score 0.368: [CLS] image of the horse in a montana game site with horses dancing around it. [SEP]
+Finished in 7.846s
+The 1-th image: h
+final caption: image of the horse in a montana game site with horses dancing around it.
+best caption: image of the horse in a montana game site with horses dancing around it.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.356: [CLS] image of the horse training event buffs returning and cowboys moving around it. [SEP]
+iter 2, The 1-th image: h,clip score 0.353: [CLS] image of the horse riding models lampoons the outlaw riders dancing around hills. [SEP]
+iter 3, The 1-th image: h,clip score 0.350: [CLS] image of the horse running clear lampoons the frontier troopers riding the yellowstone. [SEP]
+iter 4, The 1-th image: h,clip score 0.368: [CLS] image of the horse running fifty fireflies named renegade horse on battlefield camp. [SEP]
+Finished in 9.704s
+The 1-th image: h
+final caption: image of the horse running fifty fireflies named renegade horse on battlefield camp.
+best caption: image of the horse running fifty fireflies named renegade horse on battlefield camp.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.327: [CLS] image of the horse with the buffs returning and cowboys moving around it. [SEP]
+iter 2, The 1-th image: h,clip score 0.331: [CLS] image of the horse with the cowoon riders and cowboys dancing around it. [SEP]
+iter 3, The 1-th image: h,clip score 0.328: [CLS] image of the horse [unused0] new longhorns and riders all pursuing him. [SEP]
+iter 4, The 1-th image: h,clip score 0.266: [CLS] image of the horse with the longbows and arrows were behind him. [SEP]
+Finished in 9.857s
+The 1-th image: h
+final caption: image of the horse with the longbows and arrows were behind him.
+best caption: image of the horse with the cowoon riders and cowboys dancing around it.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.353: [CLS] image of the horses series buffs players moving behind moving around it. [SEP]
+iter 2, The 1-th image: h,clip score 0.397: [CLS] image of the horse ranch group model with realistic rushing sky and behind backgrounds. [SEP]
+iter 3, The 1-th image: h,clip score 0.395: [CLS] image of the horse ranchers shown in realistic model animation with transparent background. [SEP]
+iter 4, The 1-th image: h,clip score 0.380: [CLS] image of the horse ranchers running in classic light livery with cream background. [SEP]
+Finished in 9.729s
+The 1-th image: h
+final caption: image of the horse ranchers running in classic light livery with cream background.
+best caption: image of the horse ranch group model with realistic rushing sky and behind backgrounds.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.396: [CLS] image of the horse background model animated landscape featured transparent entities moving with horses. [SEP]
+iter 2, The 1-th image: h,clip score 0.413: [CLS] image of the horse color rancher miniature rendered transparent showing moving sky horses. [SEP]
+iter 3, The 1-th image: h,clip score 0.409: [CLS] image of the horse breed feature series light coloured composition showing simulated sky horses. [SEP]
+iter 4, The 1-th image: h,clip score 0.415: [CLS] image of the horse scene type series light colored 3d above simulated plains horses. [SEP]
+Finished in 7.634s
+The 1-th image: h
+final caption: image of the horse scene type series light colored 3d above simulated plains horses.
+best caption: image of the horse scene type series light colored 3d above simulated plains horses.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.370: [CLS] image of the horse white field running match scene in race team featured animals. [SEP]
+iter 2, The 1-th image: h,clip score 0.387: [CLS] image of the horse speed western team western scene in race game features color. [SEP]
+iter 3, The 1-th image: h,clip score 0.391: [CLS] image of the horse action western team formation scene behind wheels up game trailers. [SEP]
+iter 4, The 1-th image: h,clip score 0.391: [CLS] image of the horse action along team formation hell on wheels in game page. [SEP]
+Finished in 8.115s
+The 1-th image: h
+final caption: image of the horse action along team formation hell on wheels in game page.
+best caption: image of the horse action along team formation hell on wheels in game page.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.394: [CLS] image of the horse light colored glowing white color moving behind moving while horses. [SEP]
+iter 2, The 1-th image: h,clip score 0.410: [CLS] image of the horse light colored cowboy light objects moving on screen highlighted images. [SEP]
+iter 3, The 1-th image: h,clip score 0.404: [CLS] image of the horse light sky motion line scene highlighted on backgrounds highlight models. [SEP]
+iter 4, The 1-th image: h,clip score 0.411: [CLS] image of the horse light sky projected through backgrounds displayed by speed blur models. [SEP]
+Finished in 7.492s
+The 1-th image: h
+final caption: image of the horse light sky projected through backgrounds displayed by speed blur models.
+best caption: image of the horse light sky projected through backgrounds displayed by speed blur models.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.373: [CLS] image of the horse sky mount glowing white within four figures moving around it. [SEP]
+iter 2, The 1-th image: h,clip score 0.332: [CLS] image of the horse his pack projected from behind the walls all around him. [SEP]
+iter 3, The 1-th image: h,clip score 0.304: [CLS] image of the horse the man rode from behind the trees all blinding him. [SEP]
+iter 4, The 1-th image: h,clip score 0.338: [CLS] image of the horse the man rode from forming the light lightened illusion. [SEP]
+Finished in 7.905s
+The 1-th image: h
+final caption: image of the horse the man rode from forming the light lightened illusion.
+best caption: image of the horse sky mount glowing white within four figures moving around it.
+Order_list:[7, 3, 2, 8, 5, 6, 9, 4, 0, 1, 10]
+iter 1, The 1-th image: h,clip score 0.352: [CLS] image of the horse in the panoramas animated models of moving horse actions. [SEP]
+iter 2, The 1-th image: h,clip score 0.365: [CLS] image of the horse in the background among realistic models of the cowboy troopers. [SEP]
+iter 3, The 1-th image: h,clip score 0.350: [CLS] image of the horse in the herd through realistic perspective of the cowboy rider. [SEP]
+iter 4, The 1-th image: h,clip score 0.325: [CLS] image of the horse rider light background feature includes image of the horse rider. [SEP]
+Finished in 9.935s
+The 1-th image: h
+final caption: image of the horse rider light background feature includes image of the horse rider.
+best caption: image of the horse in the background among realistic models of the cowboy troopers.

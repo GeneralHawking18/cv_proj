@@ -1,9 +1,10 @@
 ...
+blurred
 blur
-fade
+faded
 smoke
-[unused3]
-[unused4]
+fog
+surrounded
 [unused5]
 [unused6]
 [unused7]

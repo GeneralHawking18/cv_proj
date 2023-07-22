@@ -8,15 +8,12 @@ from segment_anything import (
 from PIL import Image
 
 class SAM():
-    def __init__(self, device = "cuda"):
-        torch_dtype = torch.float16 if 'cuda' in device else torch.float32
+    def __init__(self, checkpoint = "sam_vit_h_4b8939.pth"):
         model_type = 'vit_h'
-        checkpoint = 'sam_vit_h_4b8939.pth'
-        model = sam_model_registry[model_type](checkpoint = checkpoint)
-        model.cuda(device)
+        self.model = sam_model_registry[model_type](checkpoint = checkpoint)
+        # model.to(device)
 
-        self.predictor = SamPredictor(model)
-        self.mask_generator = SamAutomaticMaskGenerator(model)
+        self.predictor = SamPredictor(self.model)
     
     def set_image(self, image):        
         self.predictor.set_image(np.array(image)) # load the image to predictor
