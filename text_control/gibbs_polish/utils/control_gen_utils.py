@@ -36,7 +36,9 @@ def sentiment_sequential_generation(img_name, model, clip, tokenizer,image_insta
                           max_iters=20,batch_size=1,
                          verbose=True,gamma=5, ctl_signal="positive"):
     """ Generate one word at a time, in L->R order """
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     clip_score_sequence = []
@@ -88,8 +90,11 @@ def sentiment_shuffle_generation(img_name, model, clip, tokenizer,image_instance
                           max_iters=20,batch_size=1,
                            verbose=True,gamma=5, ctl_signal="positive"):
     """ Generate one word at a time, in random generation order """
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)
+    print(batch)
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     inp = torch.tensor(batch).to(image_embeds.device)
     clip_score_sequence = []
@@ -143,7 +148,9 @@ def POS_sequential_generation(img_name, model, clip, tokenizer,image_instance,to
                           verbose=True):
     """ Generate one word at a time, in L->R order """
 
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     templete = False
     logger.info(ctl_signal)
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)

@@ -31,7 +31,7 @@ class SAM():
 
     def get_image_crop(self, image, masks, crop_mode = "w_bg"):
         # masks = self.infer_masks(input_point)
-        masked_image = self.crop_by_masks(image, masks, crop_mode = crop_mode)
+        masked_image = self.blend_with_masks(image, masks, crop_mode = crop_mode)
         size = max(masks.shape[0], masks.shape[1])
         left, top, right, bottom = self.seg_to_box(masks, size) # calculating the position of the top-left and bottom-right corners in the image
         
@@ -53,7 +53,7 @@ class SAM():
         masks = masks[0, ...]
         return masks
 
-    def crop_by_masks(self, image, masks, crop_mode = "w_bg"):
+    def blend_with_masks(self, image, masks, crop_mode = "w_bg"):
         if crop_mode == "wo_bg":
             masked_image = image * masks[:,:,np.newaxis] + (1 - masks[:,:,np.newaxis]) * 255
             masked_image = np.uint8(masked_image)

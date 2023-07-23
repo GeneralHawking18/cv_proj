@@ -60,6 +60,7 @@ def set_seed(seed):
 def get_init_text(tokenizer, seed_text, max_len, batch_size=1):
     """ Get initial sentence by padding seed_text with [mask] words to max_len """
     text = seed_text + tokenizer.mask_token * max_len
+
     ids = tokenizer.encode(text)
     batch = [ids] * batch_size
     return batch

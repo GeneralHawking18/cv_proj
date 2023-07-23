@@ -33,7 +33,9 @@ def precise_generation(
 ):
     """ Generate one word at a time, in L->R order """
 
-    seed_len = len(prompt.split()) + 1
+    # seed_len = len(prompt.split()) + 1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     
     init_prompt = prompt #  + ' ' + init_caption
@@ -122,7 +124,10 @@ def sequential_generation(img_name, model, clip, tokenizer, image_instance,token
                           max_iters=20,batch_size=1, verbose=True):
     """ Generate one word at a time, in L->R order """
 
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    # seed_len = len(tokenizer(prompt.split())) + 1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer, prompt, max_len, batch_size)
 
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
@@ -170,8 +175,11 @@ def shuffle_generation(img_name, model, clip, tokenizer,image_instance,token_mas
                           max_iters=20,batch_size=1,
                           verbose=True):
     """ Generate one word at a time, in random generation order """
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)
+
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     inp = torch.tensor(batch).to(image_embeds.device)
     clip_score_sequence = []
@@ -219,7 +227,9 @@ def span_generation(img_name, model, clip, tokenizer,image_instance,token_mask, 
                           max_len=15, top_k=0,temperature=None, alpha=0.7,beta=1,
                           max_iters=20,batch_size=1,verbose=True):
     """ Generate multiple words at a time (span generation), in L->R order """
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     span_len = 2
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
@@ -268,7 +278,9 @@ def random_generation(img_name, model, clip, tokenizer,image_instance,token_mask
                     max_len=15, top_k=0, temperature=None,alpha=0.7,beta=2,max_iters=300,print_every=10,batch_size=1,verbose=True):
     """ Generate for one random position at a timestep"""
 
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer, prompt, max_len, batch_size)
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     clip_score_sequence = []
@@ -315,7 +327,9 @@ def parallel_generation(img_name, model, clip, tokenizer,image_instance,token_ma
                         max_len=15, top_k=0, temperature=None,  alpha=0.1, beta=1,
                         max_iters=300,batch_size=1,print_every=1, verbose=True):
     """ Generate for all positions at a time step """
-    seed_len = len(prompt.split())+1
+    # seed_len = len(prompt.split())+1
+    seed_len = len(tokenizer.encode(prompt)) - 1
+
     batch = get_init_text(tokenizer,prompt, max_len, batch_size)
     image_embeds = clip.compute_image_representation_from_image_instance(image_instance)
     clip_score_sequence = []
@@ -358,8 +372,7 @@ def parallel_generation(img_name, model, clip, tokenizer,image_instance,token_ma
 
 def generate_caption(img_name, 
                     model, clip, tokenizer, 
-                    image_instance, 
-                    init_caption,
+                    image_instance, init_caption,
                     token_mask,logger,
                     prompt="", batch_size=1, max_len=15,
                     top_k=100, top_p = 1 - 1e-5,
