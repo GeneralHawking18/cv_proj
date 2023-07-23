@@ -29,7 +29,7 @@ def create_logger(folder, filename):
     }
 
     import logging
-    logger = logging.getLogger('ConZIC')
+    logger = logging.getLogger('Captioning....')
     # %(filename)s$RESET:%(lineno)d
     # LOGFORMAT = "%(log_color)s%(asctime)s [%(log_color)s%(filename)s:%(lineno)d] | %(log_color)s%(message)s%(reset)s |"
     LOGFORMAT = ""
